@@ -1,0 +1,86 @@
+
+.navBar--cont {
+    position: relative;
+    width: 100vw;
+    z-index: 2;
+    background-color: #fff;
+
+}
+
+.navBar {
+    /* padding: 1.8rem 8rem; */
+    padding-left: calc(5% + 3vw);
+    padding-right: calc(5% + 3vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: calc(9px + 0.6vw);
+
+}
+
+.homeNav{
+    height: 100%;
+}
+
+.homeNav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.homeNav li {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    height: 100%;
+    margin-right: 1.5rem;
+    color: var(--Grayish-Blue);
+    cursor: pointer;
+    
+}
+
+.homeNav li:hover{
+    border-bottom: 4px solid var(--Lime-Green);
+    padding-bottom: calc(1.8rem - 4px);
+    color: var(--Dark-Blue);
+}
+
+.request {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.request button {
+    color: white;
+    border: none;
+    min-width: 144px;
+    background: rgb(49, 211, 92);
+    background: linear-gradient(125deg, rgba(49, 211, 92, 0.7458333675266982) 0%, rgba(0, 212, 255, 1) 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 764px ){
+    .navBar{
+        height: 82.4px;
+    }
+    .request{
+        display: none;
+    }
+    .homeNav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+    
+}

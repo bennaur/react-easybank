@@ -1,0 +1,165 @@
+.grid{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: minmax(350px, 70vh);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Light-Gray);
+    z-index: 1;
+  
+}
+
+.images{
+    background-image: url("../../assets/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50px;
+    background-position-y: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+
+.images img{
+    max-width: 145%;
+    transform: translate(140px, -50px);
+}
+
+
+.parole{
+    width: 70%;
+    transform: translate(40%, 0%);
+    text-align: left;
+}
+
+.parole h1{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: calc(25px + 1vw);
+}
+
+
+.parole p{
+    font-size: calc(14px + 0.1vw);
+    color: var(--Grayish-Blue);
+ 
+}
+
+
+
+.parole button{
+    margin: 20px 0;
+    width: 30%;
+    min-width: 144px;
+    max-width: 215px;
+    color: white;
+    border: none;
+    background: rgb(49, 211, 92);
+    background: linear-gradient(125deg, rgba(49, 211, 92, 0.7458333675266982) 0%, rgba(0, 212, 255, 1) 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+/* #button{
+    width: 30%;
+    min-width: 144px;
+    max-width: 215px;
+    color: white;
+    border: none;
+    background: rgb(49, 211, 92);
+    background: linear-gradient(125deg, rgba(49, 211, 92, 0.7458333675266982) 0%, rgba(0, 212, 255, 1) 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    
+} */
+
+
+
+@media screen and (max-width: 905px) {
+    .parole{
+        transform: translate(30%, 0%);
+    }
+}
+
+
+@media screen and (max-width: 764px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(300px, 65vw) auto;
+        
+    }
+    .images{
+        grid-column: 1/1;
+        grid-row: 1;
+        background-position-x: -185px;
+        background-position-y: -169px;
+        background-size: 195% 125%;
+    }
+    
+    .images img{
+        max-width: 65vw;
+        transform: translate(0px, -60px);
+    }
+
+    .parole{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        transform: translate(0, 0);
+    }
+    
+    .menu-container{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 80;
+        margin: auto;
+        
+    }
+    
+    .menu-container ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    .menu-container li{
+        margin-bottom: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .center{
+        padding: 30px 8rem 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        
+    }
+    
+    
+    .slide-in-top {
+        -webkit-animation: slide-in-top 0.3s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+        animation: slide-in-top 0.3s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+        
+    }
+
+
+   
+    
+
+
+
+
+}
